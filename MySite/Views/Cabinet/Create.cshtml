@@ -1,0 +1,21 @@
+﻿@model MySite.Models.Item
+@{
+    ViewData["Title"] = "Новая запись";
+}
+
+<div class="container mt-4">
+    <h1>Новая запись</h1>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Заголовок</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Описание</label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

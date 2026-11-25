@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Контакты";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Свяжитесь с нами</h1>
+
+    <div class="row">
+        <div class="col-md-5 mb-4">
+            <h4>Наши контакты</h4>
+            <p><strong>Адрес:</strong> г. Москва, ул. Программистов, д. 1</p>
+            <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+            <p><strong>Email:</strong> info@mysite.ru</p>
+            <p><strong>Режим работы:</strong> Пн-Пт с 9:00 до 18:00</p>
+        </div>
+
+        <div class="col-md-7">
+            <h4>Форма обратной связи</h4>
+
+            <!-- Вывод сообщения об успехе -->
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @ViewData["SuccessMessage"]
+                </div>
+            }
+
+            <form asp-action="Contacts" method="post" class="card p-4 shadow-sm bg-light">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Иван Иванов">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Ваш Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="ivan@mail.ru">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Ваш вопрос..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>

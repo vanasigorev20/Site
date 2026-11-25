@@ -1,0 +1,15 @@
+﻿@model MySite.Models.Item
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-body">
+            <h1>@Model.Title</h1>
+            <p class="lead">@Model.Description</p>
+            <hr />
+            <a asp-action="Index" class="btn btn-secondary">Назад в каталог</a>
+        </div>
+    </div>
+</div>

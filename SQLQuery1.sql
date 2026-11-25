@@ -1,0 +1,8 @@
+﻿
+CREATE TABLE Items (
+    Id INT PRIMARY KEY IDENTITY(1,1), 
+    Title NVARCHAR(150) NOT NULL,
+    Description NVARCHAR(1000),
+    UserId INT NOT NULL
+);
+GO

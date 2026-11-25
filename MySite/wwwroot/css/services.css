@@ -1,0 +1,55 @@
+﻿.services-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    padding: 40px 0;
+    border-radius: 15px;
+}
+
+
+.services-title {
+    color: #00695c;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ffb300;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+.theme-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+
+    .theme-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 105, 92, 0.3); 
+    }
+
+
+.btn-theme {
+    background-color: #ffb300;
+    color: #333;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+    .btn-theme:hover {
+        background-color: #ff8f00;
+        color: #fff;
+    }
+
+.theme-text {
+    color: #555555;
+}
